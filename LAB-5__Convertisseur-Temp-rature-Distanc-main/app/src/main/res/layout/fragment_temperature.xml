@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Choisir l'opération :"
+        android:textSize="16sp" />
+
+    <!-- Bouton radio C to F -->
+    <RadioGroup
+        android:id="@+id/radioGroupTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioCtF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C to F"/>
+
+        <RadioButton
+            android:id="@+id/radioFtC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F to C"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <!-- Champ de saisie -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valeur à convertir : "
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/editTextTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Saisir la valeur"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FF4081"/>
+    </LinearLayout>
+
+    <!-- Bouton OK et résultat -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnOkTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:backgroundTint="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/textResultTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
